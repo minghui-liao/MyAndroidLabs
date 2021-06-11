@@ -33,7 +33,7 @@
 
     <Button
         android:id="@+id/phoneNumberbutton"
-        android:layout_width="154dp"
+        android:layout_width="wrap_content"
         android:layout_height="46dp"
         android:layout_marginStart="12dp"
         android:layout_marginTop="96dp"
@@ -48,7 +48,7 @@
 
     <Button
         android:id="@+id/changePictureButton"
-        android:layout_width="178dp"
+        android:layout_width="wrap_content"
         android:layout_height="45dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="12dp"
