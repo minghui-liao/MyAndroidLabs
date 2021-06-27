@@ -31,7 +31,6 @@ public class ChatRoom extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView( R.layout.chatlayout );
 
         chatList = findViewById(R.id.myrecycler);
@@ -44,6 +43,8 @@ public class ChatRoom extends AppCompatActivity {
         adt = new MyChatAdapter();
         chatList.setAdapter(adt);
         chatList.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
+
+        MyOpenHelper opener = new MyOpenHelper();
 
         sendbtn.setOnClickListener( vw -> {
             ChatMessage thisMessage = new ChatMessage(messageTyped.getText().toString(),1, new Date());
