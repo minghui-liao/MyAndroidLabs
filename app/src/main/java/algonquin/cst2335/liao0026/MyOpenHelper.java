@@ -23,7 +23,7 @@ public class MyOpenHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         db.execSQL("Create table " + TABLE_NAME + "(_id INTEGER PRIMARY KEY AUTOINCREMENT,"
                 + col_message + " TEXT,"
-                + col_send_receive + "INTEGER,"
+                + col_send_receive + " INTEGER,"
                 + col_time_sent + " TEXT);");
     }
 
